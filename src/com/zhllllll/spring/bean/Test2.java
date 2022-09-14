@@ -1,5 +1,10 @@
 package com.zhllllll.spring.bean;
 
+<<<<<<< HEAD
+=======
+import java.util.PrimitiveIterator;
+
+>>>>>>> origin/zhl
 public class Test2 {
     private  String test;
     private  boolean flag;
