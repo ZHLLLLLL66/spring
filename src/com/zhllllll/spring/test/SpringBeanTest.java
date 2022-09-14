@@ -38,6 +38,9 @@ public class SpringBeanTest {
         }
     }
 
+
+
+
     //类加载路径
     @Test
     public void classPath() {
