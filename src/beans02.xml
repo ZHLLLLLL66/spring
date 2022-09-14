@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--配置house对象-->
+        <bean class="com.zhllllll.spring.bean.House" id="house" init-method="init" destroy-method="destroy">
+            <property name="name" value="豪宅"/>
+        </bean>
+
+        <!--配置后置处理器
+            当我们在beans02.xml 容器配置文件中配置了后置处理器过后
+            这时我们的后置处理器就会作用在该容器创建的对象中
+        -->
+        <bean class="com.zhllllll.spring.bean.MyBeanPostProcessor" id="beanPostProcessor">
+        </bean>
+</beans>
